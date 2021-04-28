@@ -1,0 +1,65 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "04:00"
+    timezone: Europe/Berlin
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: "@babel/*"
+    versions:
+    - ">= 0"
+  - dependency-name: babel-plugin-preval
+    versions:
+    - ">= 3.0"
+  - dependency-name: core-js
+    versions:
+    - ">= 0"
+  - dependency-name: jss-*
+    versions:
+    - ">= 0"
+  - dependency-name: raw-loader
+    versions:
+    - ">= 0"
+  - dependency-name: react-dom
+    versions:
+    - ">= 0"
+  - dependency-name: react-is
+    versions:
+    - ">= 0"
+  - dependency-name: react-test-renderer
+    versions:
+    - ">= 0"
+  - dependency-name: tslint
+    versions:
+    - 5.x
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - ">= 0"
+  - dependency-name: framer-motion
+    versions:
+    - 3.10.3
+    - 3.2.1
+    - 3.3.0
+    - 4.0.3
+  - dependency-name: stylis
+    versions:
+    - 4.0.6
+    - 4.0.7
+  - dependency-name: "@types/yargs"
+    versions:
+    - 15.0.9
+    - 16.0.0
+  - dependency-name: "@types/fs-extra"
+    versions:
+    - 9.0.6
+  - dependency-name: stylis-plugin-rtl
+    versions:
+    - 2.0.1
+  - dependency-name: "@types/chai"
+    versions:
+    - 4.2.14
